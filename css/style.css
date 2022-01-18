@@ -164,6 +164,13 @@ hr {
     font-family: 'Roboto Mono', monospace;
     
 }
+#btn-2{
+    background-color: transparent;
+    color: orangered;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
 .extra{
     padding: 15px;
     margin: 20px 15px;
