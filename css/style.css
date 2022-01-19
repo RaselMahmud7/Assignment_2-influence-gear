@@ -21,6 +21,9 @@
 
 }
 
+.menu {
+    display: none;
+}
 
 /* #menu-bar,
 #nav-cart {
@@ -88,6 +91,11 @@
     font-weight: 600;
 }
 
+.btn:hover {
+    background-color: coral;
+    transition: ease-in-out;
+}
+
 #arrow {
     margin-left: 5px;
 }
@@ -116,17 +124,20 @@ hr {
 .container {
     margin: 10px 20px;
 }
-#products{
+
+#products {
     font-size: 20px;
     text-align: center;
     padding: 20px 0;
 }
-.container-card{
+
+.contaiber-card {
     margin-bottom: 15px;
-    padding:  15px 0  ;
-    
+    padding: 15px 0;
+   
 }
-.card{
+
+.card {
     box-shadow: 5px 5px 40px gray;
     padding: 15px 20px;
     border-radius: 10px;
@@ -137,12 +148,14 @@ hr {
     width: 100%;
     /* display:inline ; */
 }
-.product-name{
+
+.product-name {
     font-size: 24px;
     padding: 15px 0;
     text-transform: capitalize;
 }
-.product-price{
+
+.product-price {
     font-size: 20px;
 }
 
@@ -158,63 +171,138 @@ hr {
     font-weight: 700;
 
 }
-.product-details{
+
+.product-details {
     font-size: 14px;
     text-align: justify;
     font-family: 'Roboto Mono', monospace;
-    
+
 }
-#btn-2{
+
+#btn-2 {
     background-color: transparent;
     color: orangered;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    
 }
-.extra{
+
+.extra {
     padding: 15px;
     margin: 20px 15px;
 
 }
-.extra-text{
+
+.extra-text {
     padding: 20px 0px;
 }
-#feture-para{
+
+#feture-para {
     font-size: 16px;
     text-align: center;
 
 }
-/* Footer styles */
- footer {
-  
+
+/* Footer */
+footer {
+
     background-color: rgb(40, 4, 172);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     color: aliceblue;
-    
+
     margin-top: 20px;
     padding: 30px 0;
-   
+
 
 }
-#footer-title{
+
+#footer-title {
     font-size: 20px;
     padding-top: 10px;
 }
-#rights{
-margin-top: 10px;
+
+#rights {
+    margin-top: 10px;
 }
-.footer-text{
-font-size: 12px;
+
+.footer-text {
+    font-size: 12px;
 }
+
 .social,
 .fab {
     color: aliceblue;
-   margin: 10px;
-   margin-bottom: 0;
-}  
+    margin: 10px;
+    margin-bottom: 0;
+}
 
-/* Responsiveness */
+/* Responsive */
+
+@media only screen and (min-width: 600px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 10px;
+
+    }
+
+    .contaiber-card {
+        padding: 0 10px;
+    }
+    /* #btn-2{
+        width: 100%;
+        background-color: transparent;
+    color: orangered;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    } */
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-row-gap: 10px;
+
+    }
+    .extra{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 10px 15px;
+        margin: 0 15px;
+    }
+.extra-text{
+    width: 50%;
+    padding: 10px 15px;
+        margin: 0 15px;
+}
+.extra-img{
+    width: 50%;
+}
+#extra-img{
+    width: 90%;
+    padding: 10px 15px;
+        margin-right: 15px;
+}
+        
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-row-gap: 10px;
+
+    }
+}
+
 
